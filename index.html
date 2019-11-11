@@ -185,7 +185,7 @@ Uji coba gratis klik  <a style="color: #111" href="https://www.facebook.com/ber.
 		</div></div>					
 </div>
 	<div class="col-7">
-		<div class="row">	<a href="login.html">
+		<div class="row">	<a href="index.html">
 <img src="banner.jpg" alt="Desa Digital" style="width:100%; max-width: 607px; height:auto;"/></a>
 		</div>
 	
@@ -199,55 +199,7 @@ Uji coba gratis klik  <a style="color: #111" href="https://www.facebook.com/ber.
 </div>
 </div>
 
-<script type="text/javascript">
-<!--
-document.login.username.focus();
-document.getElementById('title').innerHTML = window.location.hostname + " > login";
 
-// login page
-var username = document.login.username;
-var password = document.login.password;
-var luser = document.getElementById("luser");
-var lpass = document.getElementById("lpass");
-var btnmem = document.getElementById("btnmem");
-var btnvcr = document.getElementById("btnvcr");
-
-// set password = username
-function setpass(){
-  var user = username.value		
-  password.value = user;
-}
-username.onchange = setpass;
-btnmem.style.backgroundColor = "#73818f";
-btnvcr.style.backgroundColor = "rgb(0, 153, 187)";  
-btntrial.style.backgroundColor = "#73818f";
-
-// change to voucher mode
-function voucher(){
-  username.focus();
-  username.onchange = setpass;
-  username.placeholder = "Voucher";
-  password.type = "hidden";
-  password.value = username.value;  
-  btnmem.style.backgroundColor = "#73818f";
-  btnvcr.style.backgroundColor = "rgb(0, 153, 187)";  
-  btntrial.style.backgroundColor = "#73818f";  
-}
-
-// change to member mode
-function member(){
-  username.focus();
-  username.onchange = "";
-  username.placeholder = "Username";
-  password.type= "password";
-  password.value = "";
-  btnmem.style.backgroundColor = "rgb(0, 153, 187)"; 
-  btnvcr.style.backgroundColor = "#73818f";
-  btntrial.style.backgroundColor = "#73818f"; 
-}
-
-//-->
-</script>
 </body>
 </html>
 
